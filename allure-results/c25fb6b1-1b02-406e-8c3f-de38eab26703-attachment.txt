@@ -1,0 +1,10 @@
+Inside loginPage fixture
+Inside dashboardPage fixture
+***type performed with value admin@email.com***
+***type performed with value admin@123***
+***click performed***
+Test Data Used In This Test admin@email.com and admin@123
+***click performed***
+***click performed***
+Exiting dashboardPage fixture
+Exiting loginPage fixture
