@@ -21,4 +21,21 @@ test.describe("Login Test", { tags: ['smoke', 'login'] }, () => {
         expect(page.url()).not.toContain('/login')
     })
 
+        test('Repeat Login to Application', async ({ page,loginPage,dashboardPage }) => {
+        await page.goto("/login");
+
+        // const loginPage = new LoginPage(page); // already created within fixture
+
+        await loginPage.loginToApplication(user.username, user.password);
+
+        console.log(`Test Data Used In This Test ${user.username} and ${user.password}`);
+
+        // const dashboardPage = new DashboardPage(page); // already created within fixture
+
+        await dashboardPage.clickOnMenuIcon();
+
+        await dashboardPage.clickOnSignOutButton();
+
+        expect(page.url()).not.toContain('/login')
+    })
 })
