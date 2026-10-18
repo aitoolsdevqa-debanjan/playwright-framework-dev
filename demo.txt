@@ -1,2 +1,1 @@
-This is a demo file for merge conflict demo - Updated by Playwright
-Playwright fixture file
+This is a demo file for merge conflict demo
