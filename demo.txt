@@ -1,2 +1,0 @@
-This is a demo file for merge conflict demo - API Updated
-Updated by API
